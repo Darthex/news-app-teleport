@@ -59,7 +59,7 @@ export default function Home() {
 
                 <div className="article-description-section article-section">
                     <p>
-                        {value.description.slice(0,100)}...
+                        {value.description && value.description.slice(0,100)}...
                     </p>
                     <h3>
                         Author- {value.creator && value.creator.length < 50 ? value.creator[0] : "Unknown"}
